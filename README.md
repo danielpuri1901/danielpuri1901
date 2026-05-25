@@ -45,7 +45,7 @@ Agentic last-mile routing platform for EU SMB logistics operators. We closed 3 p
 </td>
 <td width="50%" valign="top">
 
-#### 🧮 optimaze · *sole author*
+#### 🧮 optimaze
 [GitHub](https://github.com/danielpuri1901/optimaze-agent) · [PyPI](https://pypi.org/project/optimaze/)
 
 Open-source AI agent that auto-tunes Gurobi MIP solver models. Multi-agent bandit + k-NN retrieval over MIPLIB + soft-prompt-specialized proposer. Typical 20–50% solve-time speedup vs default configurations, up to 85% on certain instances. Distributed as a public PyPI package.
@@ -63,8 +63,8 @@ P2P clothing-swap marketplace on Next.js 15 + TypeScript with Stripe Connect esc
 </td>
 <td width="50%" valign="top">
 
-#### 📝 Readable · *sole author*
-[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pcsoftware.readable)
+#### 📝 Readable
+[GitHub](https://github.com/ReadableLabs/readable-vscode) · [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pcsoftware.readable)
 
 VS Code extension for auto-generating code documentation. Built as part of Puri Chapman Software (2021–2023). Scaled to 26,000+ developers; covered development, marketplace distribution, telemetry, and end-user support.
 
