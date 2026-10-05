@@ -1,132 +1,89 @@
-<!-- Banner -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=180&section=header&text=Daniel%20Puri&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="banner" />
-</p>
+# Daniel Puri
 
-<p align="center">
-  <em>Applied AI engineer · 4-time founder · shipping agentic systems to paying enterprise customers</em>
-</p>
+I cofounded Routes AI, a route optimization platform for last mile logistics.
+I led the agent platform architecture and worked with customers from demos through onboarding.
+Now I build AI systems at ArcelorMittal and publish my own agent tools here.
 
-<p align="center">
-  <a href="mailto:danielpuri1901@gmail.com"><img src="https://img.shields.io/badge/email-D14836?style=flat&logo=gmail&logoColor=white" alt="email"/></a>
-  <a href="https://linkedin.com/in/danielpuri"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="linkedin"/></a>
-  <a href="https://github.com/danielpuri1901"><img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white" alt="github"/></a>
-</p>
+[Email](mailto:danielpuri1901@gmail.com) · [LinkedIn](https://linkedin.com/in/danielpuri)
 
-<p align="center">
-  Amsterdam, NL · US + EU national · English (native) · Spanish (native) · French (proficient)
-</p>
+## Current work
 
----
+AI engineering intern at ArcelorMittal, June 2026 to present.
 
-### About
+I rebuilt LeadSense, a system that finds and qualifies sales leads, across five markets.
+The rebuild produced eight times more leads over two months.
 
-I'm a 2026 BSc grad from the University of Amsterdam who's spent the last year shipping AI products to paying customers. My work sits at the intersection of agentic systems and the customer surface they run on. I care about putting AI in production where the failure mode actually matters, and about building the eval discipline that makes that possible.
+- I built a production evaluation harness with Strands Evals and Langfuse.
+  Sales labels and scores are stored in Fabric SQL.
+  Training examples stay separate from the held-out examples used to check each change.
+  CI promotes changes only when they pass those checks.
+- I replaced the scoring prompt with Jev, a decision model that returns typed, calibrated probabilities.
+  The scoring path is 40 times cheaper and 20 times faster than the previous prompt.
+  DSPy and GEPA tune its questions per market.
+  A new market now needs one week of labeled data rather than two months.
+- I replaced fixed research queries with a LangGraph research workflow.
+  A planner creates topics for each country and a supervisor coordinates parallel research agents.
+  Episodic memory improves queries across runs.
+  Short-term memory reduced duplicate leads from 7.8% to 0% in the recorded evaluation.
+- I am building a virtual machine per agent for long-running outreach across applications without reliable APIs.
+  The work includes limited credentials and logged actions, with evaluation checks, drift detection, and Teams escalation.
 
-### What I'm doing now
+I am co-writing an AWS blog post about the evaluation work.
 
-**Incoming AI Engineer at ArcelorMittal Group Treasury** (Luxembourg, Jun–Sep 2026). Designing a RAG pipeline and decision-support system over multi-billion-dollar hedging exposure across coal, iron ore, natural gas, FX, and energy.
+## Public projects
 
-After that: looking for forward-deployed and applied-AI roles in NYC, starting October 2026.
+| Project | What it does |
+| --- | --- |
+| [Twin Mind](https://github.com/danielpuri1901/twin-mind) | Uses private history to support daily briefs, meeting preparation, and Telegram conversations. |
+| [AgentLab](https://github.com/danielpuri1901/agentlab) | Turns selected research papers into narrated videos, with preview checks before delivery. |
+| [Erdős proof checker](https://github.com/danielpuri1901/erdos-lean-checker) | Rebuilds submitted Lean proofs and checks their statements outside the proof agent's repository. |
+| [optimaze](https://github.com/danielpuri1901/optimaze-agent) | Tunes Gurobi solver parameters and records trials against a default baseline. Also on [PyPI](https://pypi.org/project/optimaze/). |
+| [AIRLOCK](https://github.com/danielpuri1901/airlock) | Demonstrates offline payment approval on a phone, with a required second signature on Algorand TestNet. |
+| [OpenApply](https://github.com/danielpuri1901/openapply) | Finds matching jobs and prepares forms in Chrome. Human review and submission are the default. |
+| [app-access-cli](https://github.com/danielpuri1901/app-access-cli) | Gives agents bounded access to application data, with typed responses and source information. |
 
----
+## Recent private experiments
 
-### 🛠️ Selected work
+Black Hole Flight Lab compares learned flight plans with checks based on relativistic equations.
+It includes an interactive 3D cockpit and a separate experiment with exact rational escape certificates.
+The numerical flight checker is not a formal safety proof.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+My proof-formalization harness translates published human proofs into Lean.
+The public checker verifies submissions against frozen statements.
+The experiment concerns known results, not claims of new mathematical discoveries.
 
-#### 🚚 Routes AI · *co-founder*
-*Feb–May 2026 · Amsterdam · wound down voluntarily*
+## Earlier work
 
-Agentic last-mile routing platform for EU SMB logistics operators. We closed 3 paying enterprise design partners in 2 weeks (MyPup, Foremore, Netherlink). My cofounder led OR / optimization; I led customer-facing motion and architecture on the agentic platform. Live in production at up to 2,400 parcels per day across 21 vehicles and 169 lockers at the lead partner. Selected for Xlerate accelerator (Asif Ventures). Source closed.
+- Routes AI, February 2026 to May 2026.
+  We had three paying enterprise design partners.
+  I led the agent platform architecture and customer work; my cofounder led optimization.
+  The platform served up to 2,400 parcels per day before we wound it down voluntarily.
+- Blaire, September 2025 to February 2026.
+  I cofounded a clothing marketplace and built its payment and virtual try-on flows.
+  It facilitated 300 transactions with no paid acquisition.
+- [Readable](https://github.com/ReadableLabs/readable-vscode), built with my twin brother at Puri Chapman Software.
+  I owned logging and observability for a VS Code extension used by 26,000+ developers.
+- [a tiny gesture](https://github.com/danielpuri1901/tinygesture), our Odyssey Hackathon team project.
+  I drove 51 pre-sales before we built and shipped it in 29 hours.
 
-</td>
-<td width="50%" valign="top">
+## More projects
 
-#### 🧮 optimaze
-[GitHub](https://github.com/danielpuri1901/optimaze-agent) · [PyPI](https://pypi.org/project/optimaze/)
+- [Amsterdam housing predictor](https://github.com/danielpuri1901/amsterdam-housing-predictor), an educational regression project using generated sample data.
+- [Park and bike hub placement](https://github.com/danielpuri1901/mobian-optimization), a mixed-integer optimization model.
+- [Network routing demo](https://github.com/danielpuri1901/uber-network-routing-demo), a vehicle-routing test model.
+- [Timor-Leste healthcare placement](https://github.com/danielpuri1901/timor-leste-healthcare), a model for placing hospitals under coverage and budget constraints.
 
-Open-source AI agent that auto-tunes Gurobi MIP solver models. Multi-agent bandit + k-NN retrieval over MIPLIB + soft-prompt-specialized proposer. Typical 20–50% solve-time speedup vs default configurations, up to 85% on certain instances. Distributed as a public PyPI package.
+Earlier private work also includes a face-analysis prototype.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+## Tools I use
 
-#### 👕 Blaire · *co-founder*
-*Sep 2025 – Feb 2026 · Amsterdam · wound down*
+Python and TypeScript.
+LangGraph, AWS, PostgreSQL, and Docker.
+Langfuse and Strands Evals for evaluation.
+Gurobi for optimization.
 
-P2P clothing-swap marketplace on Next.js 15 + TypeScript with Stripe Connect escrow (conditional release + automated payouts) and an AI virtual try-on flow. Benchmarked 4 generative-image models (FASHN, GPT-image, Gemini Flash v1/v2); shipped on Gemini 3.1 Image preview. 300 transactions facilitated with zero paid acquisition before winding down on marketplace economics.
+BSc Business Administration, University of Amsterdam, 2026.
+Minor in Entrepreneurship.
+English and Spanish native; French proficient.
 
-</td>
-<td width="50%" valign="top">
-
-#### 📝 Readable
-[GitHub](https://github.com/ReadableLabs/readable-vscode) · [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=pcsoftware.readable)
-
-VS Code extension for auto-generating code documentation. Built as part of Puri Chapman Software (2021–2023). Scaled to 26,000+ developers; covered development, marketplace distribution, telemetry, and end-user support.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🏆 atinygesture · *team build*
-[Odyssey Hackathon announcement](https://www.linkedin.com/posts/danielpuri_we-won-amsterdams-the-odyssey-hackathon-share-7428919681983340544-Pahi)
-
-Odyssey Hackathon winner (Amsterdam, 2026). Our team won by leading with sales velocity rather than build velocity. I drove the pre-sales motion: 51 paid pre-orders closed before we wrote a single line of code, then we shipped in 29 hours. Judged on traction.
-
-</td>
-<td width="50%" valign="top">
-
-#### 🎓 amsterdam-housing-predictor
-[GitHub](https://github.com/danielpuri1901/amsterdam-housing-predictor)
-
-Random Forest regressor on Amsterdam housing transactions. R² = 0.946, RMSE €59.33. ~50% lower error than the linear baseline. Reproducible notebook with feature-engineering writeup.
-
-</td>
-</tr>
-</table>
-
----
-
-### ⚙️ Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,nodejs,fastapi,postgres,docker,aws,linux,git&perline=12" alt="stack-icons" />
-</p>
-
-<table>
-<tr><td><b>Languages</b></td><td>Python · TypeScript · JavaScript · SQL · Bash · C</td></tr>
-<tr><td><b>AI / ML</b></td><td>Anthropic / OpenAI / Gemini APIs · multi-agent orchestration · agent memory · prompt tuning (PEFT / soft prompts) · LLM evals · RAG · pgvector · generative-image evals</td></tr>
-<tr><td><b>Backend &amp; data</b></td><td>FastAPI · Node.js · PostgreSQL · Supabase · Stripe (escrow / Connect / payouts)</td></tr>
-<tr><td><b>Frontend</b></td><td>Next.js 15 · React · TypeScript · Tailwind · Leaflet</td></tr>
-<tr><td><b>Cloud &amp; DevOps</b></td><td>AWS EC2 · Docker · Caddy · Sentry · B2 / S3 · Vercel · PyPI · GitHub Actions</td></tr>
-<tr><td><b>Optimization</b></td><td>Gurobi · MIPLIB benchmarking · VRP · OSRM · Google Maps API</td></tr>
-</table>
-
----
-
-### 📌 Pinned guide
-
-[`optimaze-agent`](https://github.com/danielpuri1901/optimaze-agent) is the headline. The other pinned repos are smaller proof-points: three MILP test problems I built before designing optimaze's eval harness ([`mobian-optimization`](https://github.com/danielpuri1901/mobian-optimization), [`uber-network-routing-demo`](https://github.com/danielpuri1901/uber-network-routing-demo), [`timor-leste-healthcare`](https://github.com/danielpuri1901/timor-leste-healthcare)), plus [`amsterdam-housing-predictor`](https://github.com/danielpuri1901/amsterdam-housing-predictor) for the ML side and [`tinygesture`](https://github.com/danielpuri1901/tinygesture) for the hackathon project.
-
-Routes AI, Blaire, and my current face-analysis product are closed-source. I'm happy to walk through any of them on a screen-share.
-
----
-
-### 📚 Education
-
-**BSc Business Administration**, University of Amsterdam (graduating June 2026). GPA 8/10 (Dutch scale, 4.0/4.0 US equivalent). Minor in Entrepreneurship. Coursework focused on quantitative methods, ML applications, and decision systems.
-
----
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=danielpuri1901&show_icons=true&hide_border=true&theme=transparent&hide=issues&count_private=false" alt="github-stats" />
-</p>
-
-<p align="center">
-  <em>Tracking the public surface here. The work that matters most is closed-source — ask me about it.</em>
-</p>
+Open to Applied AI / Forward-Deployed / Founding Engineer roles in the US and EU.
