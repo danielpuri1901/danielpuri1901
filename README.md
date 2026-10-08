@@ -28,7 +28,6 @@ The rebuild produced eight times more leads over two months.
 - I am building a virtual machine per agent for long-running outreach across applications without reliable APIs.
   The work includes limited credentials and logged actions, with evaluation checks, drift detection, and Teams escalation.
 
-I am co-writing an AWS blog post about the evaluation work.
 
 ## Public projects
 
